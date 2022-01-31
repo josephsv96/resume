@@ -172,13 +172,13 @@
 % param 1: section title
 %
 \newcommand{\cvsection}[1]{
-	% \vspace{8pt}
-	\colorbox{sectcol}{
-	\mystrut \makebox[1\linewidth][l]{
-		\textcolor{white}{\textbf{#1}}\hspace{4pt}
-		}
-		}
-	% \vspace{8pt}
+\vspace{8pt}
+\colorbox{sectcol}{
+\mystrut \makebox[1\linewidth][l]{
+	\textcolor{white}{\textbf{#1}}\hspace{4pt}
+	}
+	}
+% \vspace{8pt}
 }
 
 %create a coloured arrow with title as cv meta section section
@@ -206,7 +206,6 @@
 \newcommand{\cvevent}[5]
 {
 \vspace{8pt}
-
 \begin{tabular*}{1\textwidth}{p{3.3cm}  p{9.8cm} x{3.9cm}}
 	\textcolor{bgcol}{#1} 	& \textbf{#2} \\ 
 	 						& \textcolor{sectcol}{#3} \\
@@ -229,9 +228,9 @@
 	\textbf{#1} 		&	\textcolor{bgcol}{$\bullet$ }  #2\\[3pt]
 						&	\textcolor{bgcol}{$\bullet$ }  #3\\[3pt]
 						&	\textcolor{bgcol}{$\bullet$ }  #4\\[3pt]
-						&	\textcolor{bgcol}{$\bullet$ }  #5\\[6pt]
-						&	\textcolor{bgcol}{$\bullet$ }  #6\\[6pt]
-						&	\textcolor{bgcol}{$\bullet$ }  #7\\[6pt]
+						&	\textcolor{bgcol}{$\bullet$ }  #5\\[3pt]
+						&	\textcolor{bgcol}{$\bullet$ }  #6\\[3pt]
+						&	\textcolor{bgcol}{$\bullet$ }  #7\\[3pt]
 \end{tabular*}
 \textcolor{softcol}{\hrule}
 }
@@ -276,7 +275,7 @@
 %}}
 
 % use this for single words, e.g. CV or RESUME etc.
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Jan Küster}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{Resume}} } }}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Joseph Sebastian}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{Resume}} } }}
 
 
 %----------------------------------------------------------------------------------------
@@ -306,14 +305,11 @@
 %	SUMMARY (optional)
 %----------------------------------------------------------------------------------------
 
-\cvsection{Summary}\\
-I am a digital media graduate (M.Sc.) with project experience in educational research as well as in 
-the private sector. During my studies I focused on e-assessment software and moved over to b2b 
-software for IBM Notes Domino.
+\cvsection{Summary}
 
-Currently I develop and evaluate the next generation learning management system with Meteor based 
-on an extensive nursing curriculum for healthcare education.  I also love fitness, martial arts, 
-video games, news and Sci-Fi series.\\[-2pt]
+Self-motivated and proactive student researcher, passionate about image processing, 
+machine learning and computer vision. Studnet Intern at Dashfactory GmbH and active team-member of 
+municHMotorsport e.V. Formula Student racing team.
 
 %============================================================================%
 %	CV SECTIONS AND EVENTS (MAIN CONTENT)
@@ -324,42 +320,58 @@ video games, news and Sci-Fi series.\\[-2pt]
 %----------------------------------------------------------------------------------------
 \cvsection{Experience}
 
-\cvevent{09/2021 - Present}{Fullstack Javascript Engineer}{University of Bremen}
-{Invent a realtime classroom management using Meteor and React}
-{Design software architecture and leading development}
+\cvevent{09/2021 - Present}{Master Thesis}{Ergosign GmbH}
+{}
+{}
 
-\cvevent{02/2021 - 07/2021}{IT Consultant for IBM XPages and Notes Domino}{We4IT GmbH Bremen}
-{Realize projects in XPages and We4IT Aveedo, monitor project status, conduct reports}
-{Integrated Camunda BPMN engine and BPMN.IO modeler in We4IT Aveedo}
+\cvevent{02/2021 - 07/2021}{Software Development Intern}{Dashfactory GmbH, Leipzig}
+{Design and develop product firmware for communication and data logging 
+of an IoT device with components such as Bluetooth, drivers for sensors, etc.}
+{Support the team with App integration, product testing, etc.}
 
-\cvevent{04/2020 - 12/2020}{Scientific Employee / Software Development}{University of Bremen}
-{Invented a flexible assessment framework, targeting industrial trainees}
-{Supervised software development lifecycle, Recruited team members}
+\cvevent{04/2020 - 12/2020}{Student Research Assistant}{Iconet Imaging GmbH, Traunstein}
+{Design custom models and image processing techniques to solve problems 
+in object detection, classification of likely featured classes.}
+{}
 
-\cvevent{08/2019 - Present}{Project Management Simulation Training}{Getoq Consulting}
-{Performed a two-day project simulation from management perspective}{Topics included customer contracts, change management, controlling, operational tasks}
-
+\cvevent{08/2019 - Present}{Team member}{municHMotorsport e.V., Munich}
+{Develop object detection pipeline for driver-less system.}
 
 %---------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %--------------------------------------------------------------------------------------
 \cvsection{Education}
 
-\cvevent{2015 / 07}{Graduated as M.Sc. Digital Media}{University of Bremen}
-{Master Thesis: Semi Automated Scoring in Technology Based Assessment}
-{Developed and evaluated an algorithm for semi automated scoring of spreadsheet data}
+\cvevent{03/2019 - Present}{Master of Engineering (M.Eng) | Mechatronics}
+{Technische Hochschule Rosenheim}
+{2,0 GPA (currently)}
+{Focus on Image Processing, Machine Learning}
 
-\cvevent{2012 - 2013}{Master Project - PrIMA}{University of Bremen}
-{Co-Invented a touch table application for medical support, co-developed software (Java) }
-{Formed a scrum team, maintained project dev server (Debian), surveyed target audience}
+\cvevent{08/2014 - 05/2018}{Bachelor of Technology (B.Tech) | Mechanical Engineering}
+{Amal Jyothi College of Engineering, Kerala, India}
+{2,1 GPA}
+{Winner of I2U project competition for "Design and development of a gamma type 
+Stirling engine"}
 
-\cvevent{2012 - 2015}{Master Studies Digital Media}{University of Bremen}
-{Inter-cultural classes in English, covering special topics in computer science and design}
-{Professionalized in research methods, software development and e-assessment}
+%---------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%--------------------------------------------------------------------------------------
+\cvsection{Projects}
 
-\cvevent{2009 - 2010}{Semester Abroad}{University of Melbourne}
-{Mastered six months of study and trans-cultural experience in Melbourne, Australia}
-{Finished machine programming, information visualization, professional essay writing}
+\cvevent{10/2020 - 02/2021}
+{All Sky Images Cloud Detection}
+{Technische Hochschule Rosenheim}
+{Developed semantic segmentation models, to distinguish clouds as part of 
+the solar energy estimation pipeline, with data recorded at TH Rosenheim.}
+{}
+
+\cvevent{09/2019 - 02/2020}
+{Mater project: Optical Enamel Inspection of Oven Cavities}
+{Technische Hochschule Rosenheim}
+{Designing, prototyping of camera test rig, Arduino based control system, 
+lighting unit design and development of software to remove reflections.}
+{}
+
 
 %---------------------------------------------------------------------------------------
 %	SKILLS SECTION
@@ -374,13 +386,37 @@ video games, news and Sci-Fi series.\\[-2pt]
 {Embedded development (Arduino, ESP32)}
 {Docker, containerized development}
 
-\cvskill{Software}
-{Python}
-{C, C++}
-{Git, Gitflow}
-{Docker, containerized development}
-{Embedded development (Arduino, ESP32)}
-{Docker, containerized development}
+\cvskill{Machine Learning}
+{Scikit-learn, Pandas, NumPy, Matplotlib}
+{Tensorflow, PyTorch}
+{OpenCV}
+{Image Classification, Object Detection, Instance Segmentation}
+{Statistics}
+{}
+
+\cvskill{Soft Skills}
+{Predictive Modelling}
+{Critical Thinking}
+{Problem Solving}
+{}
+{}
+{}
+
+\cvskill{Aditional Skills}
+{MS Office}
+{CATIA V5, SolidWorks}
+{CNC Programming, MasterCAM X8}
+{}
+{}
+{}
+
+\cvskill{Languages}
+{English}
+{German}
+{Malayalam}
+{}
+{}
+{}
 
 %-------------------------------------------------------------------------------------------------
 %	ARTIFICIAL FOOTER (fancy footer cannot exceed linewidth) 
